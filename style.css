@@ -28,14 +28,21 @@ body {
   }
   
   /* Estilos para los proyectos */
-  .project {
+  .project-row {
     display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .project {
+    width: 25%;
     margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
   }
   
   .project-image {
-    width: 200px;
-    height: 150px;
-    margin-right: 20px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
   }
   
