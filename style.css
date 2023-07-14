@@ -1,11 +1,22 @@
 /* styles.css */
+/* paleta fondo */
+/* 
+color: #034159 
+color: #025951
+color: #02735E
+color: #038C3E
+color: #0CF25D */
+
 
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-  }
+    background: linear-gradient(to bottom, #034159, #025951, #02735E, #038C3E, #0CF25D), linear-gradient(to right, #ffcccc, #99ccff);
+    background-blend-mode: multiply; /* mezclo colores gradientes */
+      }
+      
   
   .container {
     max-width: 960px;
