@@ -7,21 +7,14 @@ color: #02735E
 color: #038C3E
 color: #0CF25D */
 
+/* Código para la fuente 'Kalam' */
+@font-face {
+  font-family: 'Kalam';
+  src: url('./fonts/Kalam-Light.ttf') format('truetype');
+}
 
 /* Estilos generales */
-.logo {
-    position: fixed;
-    top: 15px; /* Ajusta la posición vertical según tus necesidades */
-    left: 20px; /* Ajusta la posición horizontal según tus necesidades */
-    z-index: 999; /* Ajusta la posición en la pila según sea necesario */
-  }
 
-  .logo-image {
-    width: 100px;
-    height: 80px;
-    border-radius: 12px;
-  }
-  
 
 body {
     font-family: Arial, sans-serif;
@@ -39,7 +32,57 @@ body {
     margin-top: 80px; /* Ajusta el margen superior para evitar que el contenido se superponga con el logotipo fijo */
   }
   
+  /* Estilos para el encabezado y la barra de navegación */
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: linear-gradient(to bottom, #034159, #025951, #02735E, #038C3E, #0CF25D), linear-gradient(to right, #ffcccc, #99ccff);
+    background-blend-mode: multiply;
+  }
+
+  nav {
+    margin-top: -25px;
+    margin-right: 108px; /* Ajusta el margen superior para evitar que el contenido se superponga con la barra de navegación */
+  }
+  
+  nav ul.navigation {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul.navigation li a {
+    text-decoration: none;
+    color: rgb(221, 238, 243);
+  }
+  .logo {
+    position: fixed;
+    top: 15px; /* Ajusta la posición vertical según tus necesidades */
+    left: 20px; /* Ajusta la posición horizontal según tus necesidades */
+    z-index: 999; /* Ajusta la posición en la pila según sea necesario */
+  }
+
+  .logo-image {
+    width: 100px;
+    height: 80px;
+    border-radius: 12px;
+    margin-left: 30px;
+  }
+  
   /* Estilos para las secciones */
+  h1 {
+    margin-top: 170px;
+    margin-left: 150px;
+    color: rgb(221, 238, 243);
+  }
   section {
     margin-bottom: 40px;
   }
@@ -52,7 +95,16 @@ body {
   section p {
     margin-bottom: 20px;
   }
+  .biografia {
+    color: rgb(221, 238, 243);
+  }
   
+  .kalam-font {
+    font-family: 'Kalam', Arial, sans-serif;
+    /* Estilos adicionales para el párrafo con la fuente 'Kalam' */
+    font-size: 20px; /* Ajusta el tamaño de fuente según tus preferencias */
+  }
+
   /* Estilos para los proyectos */
   .project-row {
     display: flex;
